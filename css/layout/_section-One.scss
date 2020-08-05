@@ -1,0 +1,183 @@
+/* Section One */
+
+.section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .intro-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 650px;
+        // width: 100%;
+        background-color: #f4f4f4;
+        background-image: url('/img/movertis-gestion-flotas-gps-6.jpg');
+        background-position: 0 0;
+        background-size: cover;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    .intro-content {
+        margin-bottom: 20px;
+        width: 70%;
+        max-width: 1140px;
+        text-align: center;
+        .intro-text {
+            width: 80%;
+            margin-right: auto;
+            margin-bottom: 35px;
+            margin-left: auto;
+            .heading-jumbo {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 64px;
+                line-height: 80px;
+                text-transform: none;
+            }
+            .paragraph-bigger {
+                margin-bottom: 10px;
+                font-size: 20px;
+                line-height: 34px;
+                font-weight: 400;
+                opacity: .6;
+            }
+        }
+        .button {
+            display: inline-block;
+            max-width: 100%;
+            background-color: #fff;
+            color: #000;
+            padding: 16px 35px;
+            font-size: 14px;
+            line-height: 26px;
+            border-radius: 3px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+            &:hover {
+                background-color: #f1f1f1;
+            }
+            &:active {
+                background-color: #e1e1e1;
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+        .motto-wrap {
+            width: 80%;
+            margin-right: auto;
+            margin-bottom: 85px;
+            margin-left: auto;
+            text-align: center;
+        }
+        .label {
+            opacity: .6;
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .heading-jumbo-small {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 400;
+            text-transform: none;
+        }
+        .divider {
+            height: 1px;
+            background-color: #eee;
+        }
+    }
+    .home-content-wrap {
+        margin-top: 80px;
+        margin-bottom: 120px;
+        .w-layout-grid {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-column-gap: 80px;
+            grid-row-gap: 30px;
+            grid-template-areas: ". .";
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .w-node {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .w-node-img {
+            display: block;
+            max-width: 100%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .w-layout-grid-2 {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-areas: ". .";
+            grid-template-columns: 2fr 1fr;
+            column-gap: 80px;
+            row-gap: 30px;
+            grid-template-rows: auto;
+            align-items: center;
+            .w-node-2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            .w-node-img2 {
+                display: block;
+                max-width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+    .home-section-wrap {
+        margin-bottom: 30px;
+        .section-heading {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 50px;
+            color: #323232;
+        }
+        .paragraph-light {
+            opacity: .6;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+    }
+    .button {
+        display: inline-block;
+        max-width: 100%;
+        padding: 12px 25px;
+        border-radius: 3px;
+        background-color: #1a1b1f;
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    }
+}
