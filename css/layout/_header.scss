@@ -19,7 +19,7 @@
         padding: 30px 50px;
         margin: 0 auto;
         font-family: MyFont;
-        a {
+        .logo-link {
             display: block;
             position: relative;
             text-decoration: none;
@@ -36,9 +36,9 @@
         }
         .menu {
             position: relative;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             top: 0;
             left: 0;
             right: 0;
@@ -48,7 +48,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                float: right;
+                // float: right;
                 .navigation-item {
                     position: relative;
                     display: inline-block;
@@ -74,15 +74,15 @@
                 }
             }
         }
-        .menu-button {
-            position: relative;
-            display: none;
-            float: left;
-            padding: 18px;
-            font-size: 24px;
-            cursor: pointer;
-            box-sizing: border-box;
-        }
+        // .menu-button {
+        //     position: relative;
+        //     display: none;
+        //     float: left;
+        //     padding: 18px;
+        //     font-size: 24px;
+        //     cursor: pointer;
+        //     box-sizing: border-box;
+        // }
         .cc-contact-us {
             position: relative;
             display: inline-block;
@@ -114,7 +114,7 @@
     background-color: transparent;
     width: 40px;
     height: 40px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -123,7 +123,7 @@
 .icon-bar {
     display: block;
     width: 25px;
-    height: 4px;
+    height: 2px;
     margin: 2px;
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     background-color: hsl(0, 0%, 80%);
@@ -154,8 +154,51 @@
 }
 
 // media query
-@media screen and (min-width: 700px) {
-    .menu-toggle {
-        display: none;
+@media (max-width: 952px) {
+    .logo-link {
+        font-size: 30px;
+        padding-left: 50px;
     }
+    .navigation-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .navigation-items {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    // .menu-toggle {
+    //     display: none;
+    // }
 }
